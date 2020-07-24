@@ -16,27 +16,27 @@ class board:
     [4,0,0,1,1,1,1,1,0,0,4],
     ]
     
-    
-    def printboard(self):
-        for i in self.b:
-            for j in i:
-                if j == 1:
-                    print(colored(' 1 ', 'blue', 'on_green'), end='')
-                elif j ==0:
-                    print(colored(' 0 ', 'white'), end='')
-                elif j == 2:
-                    print(colored(' 2 ', 'white', 'on_red'), end='')
-                elif j == 3:
-                    print(colored(' 3 ', 'red', 'on_yellow'), end='')
-                elif j == 4:
-                    print(colored(' 4 ', 'blue', 'on_white'), end='')
-            print(" "+str(j)+" ", end='')
-            print()        
+    #COLORS APPLIED BUT WORKING ISSUE, NOT SOLVED
     # def printboard(self):
     #     for i in self.b:
     #         for j in i:
-    #             print(" "+str(j)+" ", end='')
-    #         print()
+    #             if j == 1:
+    #                 print(colored(' 1 ', 'blue', 'on_green'), end='')
+    #             elif j ==0:
+    #                 print(colored(' 0 ', 'white'), end='')
+    #             elif j == 2:
+    #                 print(colored(' 2 ', 'white', 'on_red'), end='')
+    #             elif j == 3:
+    #                 print(colored(' 3 ', 'red', 'on_yellow'), end='')
+    #             elif j == 4:
+    #                 print(colored(' 4 ', 'blue', 'on_white'), end='')
+    #         print(" "+str(j)+" ", end='')
+    #         print()        
+    def printboard(self):
+        for i in self.b:
+            for j in i:
+                print(" "+str(j)+" ", end='')
+            print()
     
     
 r = board.b
